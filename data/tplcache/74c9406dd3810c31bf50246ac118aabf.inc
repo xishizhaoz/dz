@@ -1,0 +1,8 @@
+
+
+
+<field:sj itemname="手机" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">
+</field:sj>
+
+<field:nr itemname="留言内容" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">
+</field:nr>

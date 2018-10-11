@@ -1,0 +1,1 @@
+<div class="slick-slide"> <img class="cover-image" src="[field:litpic/]" srcset='[field:litpic/]' sizes="(max-width: 767px) 767px"> </div>

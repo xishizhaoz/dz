@@ -1,0 +1,4 @@
+INSERT INTO `dede_flink` VALUES('10','1','http://www.dedecms.com','织梦模板','','','','1472563560','1','2');
+INSERT INTO `dede_flink` VALUES('12','1','http://www.365ymw.com','源码商城','','','','1472563577','1','2');
+INSERT INTO `dede_flink` VALUES('11','1','http://www.10yanw.com/','源码购','','','','1472563569','1','2');
+INSERT INTO `dede_flink` VALUES('13','1','http://www.10yanw.com/','响应式模板','','','','1511232774','1','1');

@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" class="button">查看更多<span class="icon-long-arrow-right"></span></a>

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="dede58"  data-variable="/,cn,10001,,10001,res023" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by dedecms.com" />
+<link rel='stylesheet' href='/skin/css/style.css'>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+
+<section class="derived-banner">
+  <div class="container">
+    <div class="met-banner  " data-height='' style=''> 
+	{dede:arclist typeid='13' row='4' titlelen='50' orderby='pubdate'}
+	<div class="slick-slide"> <img class="cover-image" src="[field:litpic/]" srcset='[field:litpic/]' sizes="(max-width: 767px) 767px"> </div>
+	{/dede:arclist}
+ </div>
+  </div>
+</section>
+<div class="container">
+  <ul class="grid" id="grid">
+    <div class="item w12 col-xs-12">
+      <div class="met-index-notice">
+        <div class="notice clearfix"> <span class="notice-title col-md-2 col-xs-4">通知公告 </span> <span class="notice-swiper col-md-10 col-xs-8">
+          <ul class="notice-ul">
+		  {dede:arclist typeid='8' row='6' titlelen='60' orderby='pubdate'}
+            <li class="notice-li"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+			{/dede:arclist}
+          </ul>
+          <a href="/a/tongzhigonggao/" title="通知公告"><i class="fa fa-sign-out"></i></a> </span> </div>
+      </div>
+    </div>
+    <div class="item w8 col-xs-12">
+      <div class="met-index-imgnews">
+        <div class="left-news">
+          <div class="left-img">
+            <div class="slick" id="imgnews-slick"> 
+			{dede:arclist typeid='8' row='3' flag='f' titlelen='60' orderby='pubdate'}
+			<div> <a href="[field:arcurl/]" title="[field:title/]">
+                <h3 class="animation-slide-bottom">[field:title/]</h3>
+                <img class="cover-image" src="[field:litpic/]" srcset='[field:litpic/]' sizes="(max-width: 991px) 991px" alt="[field:title/]"> </a> </div>
+				{/dede:arclist}
+ </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item col-xs-12">
+      <div class="met-index-imgnews">
+        <ul class="right-news news-ul">
+          <div class="right-img"><a href="/a/redianwenti/" title="热点问题"> <img src="/skin/images/1506755602.jpg"> </a> </div>
+		  {dede:arclist typeid='9' row='4' titlelen='60' orderby='pubdate'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"> [field:title/] </a> </li>
+		  {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <div class="item  col-xs-12">
+      <div class="met-index-news">
+        <div class="title clearfix"> <h2 class="news-h">合作交流</h2>
+          <p class="news-desc">News</p>
+        </div>
+        <ul class="news-list">
+		{dede:arclist typeid='10' row='5' titlelen='60' orderby='pubdate'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> [field:title/]</a> </li>
+		  {/dede:arclist}
+        </ul>
+        <div class="more"> <a href="/a/hezuojiaoliu/" title="合作交流"> 更多 </a> </div>
+      </div>
+    </div>
+    <div class="item  col-xs-12 ">
+      <div class="met-index-news">
+        <div class="title clearfix"> <h2 class="news-h">招生计划</h2>
+          <p class="news-desc">publicity</p>
+        </div>
+        <ul class="news-list">
+          {dede:arclist typeid='2' row='5' titlelen='60' orderby='pubdate'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> [field:title/]</a> </li>
+		  {/dede:arclist}
+
+        </ul>
+        <div class="more"> <a href="/a/zhaoshengjihua/" title="招生计划"> 更多 </a> </div>
+      </div>
+    </div>
+    <div class="item col-md-4 col-sm-12">
+      <div class="item-content">
+        <div class="met-index-img"> <a><img src="/skin/images/1508914130.gif" style="height:px;"></a> </div>
+      </div>
+    </div>
+    <div class="item col-xs-12">
+      <div class="met-index-product">
+        <div class="container">
+          <div class="title clearfix">
+            <h2 class="news-h">快速通道</h2>
+            <p class="news-desc">Express channel</p>
+          </div>
+          <div class="nav-tabs-vertical">
+            <ul class="nav nav-tabs margin-right-25" data-plugin="nav-tabs" role="tablist" >
+              <li class="active" role="presentation"> <a data-toggle="tab" href="#127" role="tab" aria-expanded="true"> 在线留言 </a></li>
+              <li class="" role="presentation"> <a data-toggle="tab" href="#129" role="tab" aria-expanded="true"> 录取查询 </a></li>
+              <li class="" role="presentation"> <a data-toggle="tab" href="#144" role="tab" aria-expanded="true"> 学院网站 </a></li>
+              <li class="" role="presentation"> <a data-toggle="tab" href="#145" role="tab" aria-expanded="true"> OA系统 </a></li>
+            </ul>
+            <div class="tab-content padding-vertical-15">
+              <div class="tab-pane active" id="127" role="tabpanel">
+                <p></p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="/a/zaixianzixun/" title="在线咨询"> <img class="cover-image" src="/skin/images/1.jpg" alt="在线咨询"></a> </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="more"> <a href="/a/zaixianzixun/" title="在线咨询"> 查看详情 </a> </div>
+                  </div>
+                </div> </div>
+              <div class="tab-pane " id="129" role="tabpanel">
+                <p></p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="/a/luqu/" title="录取查询"> <img class="cover-image" src="/skin/images/3.jpg" alt="录取查询"></a> </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="more"> <a href="/a/luqu/" title="录取查询"> 查看详情 </a> </div>
+                  </div>
+                </div> </div>
+              <div class="tab-pane " id="144" role="tabpanel">
+                <p></p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="#" title="学院网站"> <img class="cover-image" src="/skin/images/2.jpg" alt="学院网站"></a> </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="more"> <a href="#" title="学院网站"> 查看详情 </a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane " id="145" role="tabpanel">
+                <p></p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="#" title="OA系统"> <img class="cover-image" src="/skin/images/3.jpg" alt="OA系统"></a> </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="more"> <a href="#" title="OA系统"> 查看详情 </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item col-xs-12">
+      <div class="met-index-news">
+        <div class="title clearfix"> <h2 class="news-h">热点问题</h2>
+          <p class="news-desc">Policy</p>
+        </div>
+        <ul class="news-list">
+          {dede:arclist typeid='9' row='5' titlelen='60' orderby='pubdate'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> [field:title/]</a> </li>
+		  {/dede:arclist}
+
+        </ul>
+        <div class="more"> <a href="/a/redianwenti/" title="热点问题"> 更多 </a> </div>
+      </div>
+    </div>
+    <div class="item  col-xs-12">
+      <div class="met-index-news">
+        <div class="title clearfix"> <h2 class="news-h">学科科研</h2>
+          <p class="news-desc">Investment</p>
+        </div>
+        <ul class="news-list">
+          {dede:arclist typeid='28' row='5' titlelen='60' orderby='pubdate'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> [field:title/]</a> </li>
+		  {/dede:arclist}
+
+        </ul>
+        <div class="more"> <a href="/a/xuekekeyan/" title="学科科研"> 更多 </a> </div>
+      </div>
+    </div>
+  </ul>
+</div>
+{dede:include filename="footnav.htm"/}
+<div class="met-links">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li>友情链接 :</li>
+      {dede:flink titlelen='20' row='20' type='text'}
+      <li> [field:link /]  </li>
+	  {/dede:flink}      
+    </ol>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+<script type="text/javascript" async src="//idm-su.baidu.com/su.js"></script>
+</body>
+</html>

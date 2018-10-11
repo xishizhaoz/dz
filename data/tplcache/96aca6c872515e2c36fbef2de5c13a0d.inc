@@ -1,0 +1,1 @@
+<div class="x6 item"><a href='{dede:field name='typeurl'/}'><&nbsp;{dede:field name='typename'/}</a></div>

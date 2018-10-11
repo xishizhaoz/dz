@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="dede58"  data-variable="/,cn,19,19,1,res023" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel='stylesheet' href='/skin/css/style.css'>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+
+<section class="derived-banner">
+  <div class="container">
+    <div class="met-banner   banner-ny-h" data-height='' style=''>
+      <div class="slick-slide"> <img class="cover-image" src="/skin/images/1506744384.jpg" sizes="(max-width: 767px) 767px"> </div>
+    </div>
+  </div>
+</section>
+<div class="met-column-nav ">
+  <div class="container">
+    <div class="card">
+      <div class="sidebar-tile">
+        <ul class="met-column-nav-ul invisible-xs">
+		  {dede:channel type ='son'  currentstyle="
+          <li><a href='~typelink~' class='link active'>~typename~</a> </li>
+        "}
+          <li><a href="[field:typelink/]"  title="[field:typename/]" class="link">[field:typename/]</a> </li>
+{/dede:channel}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="met-message animsition">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="met-message-body">
+            <ul class="list-group list-group-dividered list-group-full met-page-ajax">
+			{dede:loop table='dede_diyform2' sort='id' row='30' if='ifcheck=1'}
+              <li class="list-group-item">
+                <div class="media">
+                  <div class="media-left"> <i class="icon wb-user-circle" aria-hidden="true"></i> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"> <small class="pull-right"> </small> [field:xm/] </h4>
+                    <p>[field:content/]</p>
+                    <div class="content well margin-bottom-0"> [field:hf/] </div>
+                  </div>
+                </div>
+              </li>
+			   {/dede:loop}
+			 
+            </ul>
+            
+            <!-- --> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="met-message-submit">
+            <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+              <input type="hidden" name="action" value="post" />
+              <input type="hidden" name="diyid" value="2" />
+              <input type="hidden" name="do" value="2" />
+			  <input name="hf" type="hidden" value=" ">
+              <div class="form-group">
+                <div>
+                  <input name='xm' class='form-control' type='text' placeholder='姓名' data-fv-notempty="true" data-fv-message="不能为空" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <input name='dh' class='form-control' type='text' placeholder='电话'  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <input name='yx' class='form-control' type='text' placeholder='Email'  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <input name='qt' class='form-control' type='text' placeholder='省份'  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <textarea name='nr' class='form-control' data-fv-notempty="true" data-fv-message="不能为空" placeholder='留言内容 ' rows='5'></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-icon">
+                  <input type="text" class="form-control"  id="vdcode" name="validate" class="code" />
+			  
+              <span class="input-group-addon"> <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="/include/vdimgck.php"/><a href="javascript:vide(-1);" onClick="changeAuthCode();">看不清？ </a></span> <script type="text/javascript" language="javascript">
+			//验证码
+			function changeAuthCode(){
+				var num =newDate().getTime();varrand= Math.round(Math.random()*10000);    
+				num = num +rand;    
+				$('#ver_code').css('visibility','visible');
+				if($("#vdimgck")[0]){        
+					$("#vdimgck")[0].src ="../include/vdimgck.php?tag="+ num;
+				}
+				return false;
+			}
+             </script> </div>
+              </div>
+              <input name="times" value="" type="hidden" id="times" style="width:250px" class="intxt">
+              <script type="text/javascript">
+window.onload = function(){
+var nowDate = new Date();
+var str = nowDate.getFullYear()+"-"+(nowDate.getMonth() + 1)+"-"+nowDate.getDate()+" "+nowDate.getHours()+":"+nowDate.getMinutes()+":"+nowDate.getSeconds();
+document.getElementById("times").value=str;
+}
+</script>
+              <input type="hidden" name="dede_fields" value="xm,text;dh,text;yx,text;qt,text;nr,multitext;times,datetime;hf,multitext" />
+<input type="hidden" name="dede_fieldshash" value="36203170bfc0ac0af5745b029add0ff2" />
+              <div class="form-group margin-bottom-0">
+                <button type="submit" class="btn btn-primary btn-block btn-squared">提交</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{dede:include filename="footnav.htm"/}
+{dede:include filename="footer.htm"/}
+</body>
+</html>

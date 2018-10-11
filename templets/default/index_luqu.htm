@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="dede58"  data-variable="/,cn,19,19,1,res023" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel='stylesheet' href='/skin/css/style.css'>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+
+<section class="derived-banner">
+  <div class="container">
+    <div class="met-banner   banner-ny-h" data-height='' style=''>
+      <div class="slick-slide"> <img class="cover-image" src="/skin/images/1506744384.jpg" sizes="(max-width: 767px) 767px"> </div>
+    </div>
+  </div>
+</section>
+<div class="met-column-nav ">
+  <div class="container">
+    <div class="card">
+      <div class="sidebar-tile">
+        <ul class="met-column-nav-ul invisible-xs">
+		  {dede:channel type ='son'  currentstyle="
+          <li><a href='~typelink~' class='link active'>~typename~</a> </li>
+        "}
+          <li><a href="[field:typelink/]"  title="[field:typename/]" class="link">[field:typename/]</a> </li>
+{/dede:channel}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="met-feedback animsition">
+  <div class="container">
+    <div class="row">
+      <div class="met-feedback-body">
+        <form action="/plus/diy.php" class="met-form met-form-validation" enctype="multipart/form-data" method="post">
+          <input type="hidden" name="action" value="post" />
+          <input type="hidden" name="diyid" value="1" />
+          <input type="hidden" name="do" value="2" />
+          <div class="form-group"> 
+            <!--<div>
+              <select name='title' class='form-control' data-fv-notempty="true" data-fv-message="不能为空">
+                <option value=''>反馈主题</option>
+                <option value='意见建议'>意见建议</option>
+                <option value='民政协调'>民政协调</option>
+                <option value='民生服务'>民生服务</option>
+                <option value='其他反馈'>其他反馈</option>
+              </select>
+            </div>--> 
+          </div>
+          <div class="form-group">
+            <div>
+              <input name='name' class='form-control' type='text' placeholder='姓名' data-fv-notempty="true" data-fv-message="不能为空" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <input name='email' class='form-control' type='text' placeholder='身份证号码' data-fv-notempty="true" data-fv-message="不能为空" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <input name='tel' class='form-control' type='text' placeholder='手机号'  />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <input name='add' class='form-control' type='text' placeholder='详细地址 '  />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <textarea name='content' class='form-control' data-fv-notempty="true" data-fv-message="不能为空" placeholder='信息描述 ' rows='5'></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+			  <input type="text" class="form-control"  id="vdcode" name="validate" class="code" />
+			  
+              <span class="input-group-addon"> <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="/include/vdimgck.php"/><a href="javascript:vide(-1);" onClick="changeAuthCode();">看不清？ </a></span> <script type="text/javascript" language="javascript">
+			//验证码
+			function changeAuthCode(){
+				var num =newDate().getTime();varrand= Math.round(Math.random()*10000);    
+				num = num +rand;    
+				$('#ver_code').css('visibility','visible');
+				if($("#vdimgck")[0]){        
+					$("#vdimgck")[0].src ="../include/vdimgck.php?tag="+ num;
+				}
+				return false;
+			}
+             </script> </div>
+          </div>
+          <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;add,text;content,multitext" />
+<input type="hidden" name="dede_fieldshash" value="6f668dfbf223e1fdace7f712d8dc8e29" />
+          <div class="form-group margin-bottom-0">
+            <button type="submit" class="btn btn-primary btn-lg btn-block btn-squared">提交</button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</section>
+{dede:include filename="footnav.htm"/}
+{dede:include filename="footer.htm"/}
+</body>
+</html>

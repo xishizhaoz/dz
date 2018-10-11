@@ -1,0 +1,9 @@
+INSERT INTO `dede_uploads` VALUES('72','0','160830/1-160S0221431329.jpg','/uploads/allimg/160830/1-160S0221431329.jpg','1','600','419','0','90548','1472566471','1');
+INSERT INTO `dede_uploads` VALUES('73','0','160830/1-160S022143YQ.jpg','/uploads/allimg/160830/1-160S022143YQ.jpg','1','550','325','0','56423','1472566478','1');
+INSERT INTO `dede_uploads` VALUES('83','75','校园一角1','/uploads/allimg/171121/11442HG4-0.jpg','1','794','521','0','66784','1511235867','1');
+INSERT INTO `dede_uploads` VALUES('84','76','校园一角2','/uploads/allimg/171121/1144512432-0.jpg','1','800','541','0','105082','1511235891','1');
+INSERT INTO `dede_uploads` VALUES('85','77','校园一角3','/uploads/allimg/171121/114511C43-0.jpg','1','620','370','0','53438','1511235911','1');
+INSERT INTO `dede_uploads` VALUES('86','78','校园一角4','/uploads/allimg/171121/1145364241-0.jpg','1','541','361','0','37193','1511235936','1');
+INSERT INTO `dede_uploads` VALUES('87','79','校园一角5','/uploads/allimg/171121/1146052114-0.jpg','1','750','480','0','127904','1511235966','1');
+INSERT INTO `dede_uploads` VALUES('88','94','党员年代秀 再忆入党那年','/uploads/allimg/171121/124S36229-0.jpg','1','770','372','0','81137','1511239713','1');
+INSERT INTO `dede_uploads` VALUES('89','102','中国式“非对称”赶超撼动世界','/uploads/allimg/171121/1253303P1-0.jpg','1','500','351','0','136188','1511240010','1');
